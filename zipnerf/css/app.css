@@ -106,8 +106,8 @@ name {
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  width: 300px;
+  height: 300px;
   position: relative;
 }
 
@@ -156,4 +156,8 @@ span.highlight {
 	display: inline-block;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
+}
+
+.tbody{
+  padding-bottom: 1em;
 }
