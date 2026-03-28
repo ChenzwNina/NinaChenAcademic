@@ -9,137 +9,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
+
   </head>
 
   <body>
-    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Ziwei Nina Chen
-                </p>
-                <p>My name is Ziwei Nina Chen. I am a first-year PhD student in Computer Science & Engineering at UC San Diego, advised by <a href="https://kvaccaro.com/" target="_blank">Prof. Kristen Vaccaro</a>. I am also a member of the <a href = "https://designlab.ucsd.edu/" target="_blank">Design Lab</a>. My current research focus is leveraging AI power to facilitate communication across roles (i.e. designers and engineers), and understanding potential harm caused by the use of LLMs (i.e. dark patterns). I am interested in researching, designing and building people-centered systems. 
-                </p>
-                <p>
-                  Before my PhD program, I worked as a UX designer at <a href="https://www.dustyrobotics.com/" target="_blank">Dusty Robotics</a> in Mountain View, where I designed robot control app for construction professionals to print digital layouts on the ground.
-                  I obtained my master’s degree in Information from the University of Michigan. At the UM, my research, advised by <a href="https://scholar.google.com/citations?user=zg29qGEAAAAJ" target="_blank">Prof. Florian Schaub</a>, focused on addressing water access challenges faced by the homeless population. This project won first prize in the CHI 2024 Student Design Competition.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:nic005@ucsd.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="data/Ziwei_Chen_s_Resume.pdf" target="_blank">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=oEkbI_0AAAAJ&hl=en" target="_blank">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/ChenzwNina" target="_blank">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:25%;max-width:25%">
-                <a href= "images/Profile.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/Profile.png"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  My recent research interests focus on digital harms and frictions that arise during interactions between people and algorithms or AI in social computing applications. I am particularly attentive to users' experiences and explore how to design systems that effectively support their needs.
-                </p>
-              </td>
-            </tr>
-          </tbody></table> -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-    <tr>
-      <td style="padding:16px;width:20%;vertical-align:top">
-        <div class="one">
-          <img src='images/teaser_dark_pattern.png' width=100%>
+    <div class="site-shell">
+      <aside class="sidebar">
+        <div class="sidebar-inner">
+          <nav aria-label="Site">
+            <a href="index.html" class="active">Home</a>
+            <a href="news.html">News</a>
+            <a href="about.html">About Me</a>
+            <a href="resume.html">Resume</a>
+          </nav>
         </div>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <!-- <a href="https://dl.acm.org/doi/abs/10.1145/3613905.3647969"> -->
-          <span class="papertitle">Deception at Scale: Deceptive Designs in 1K LLM-Generated E-Commerce Components</span>
-        </a>
-        <br>
-        <strong>Ziwei Chen</strong>, Jiawen Shen, Luna, Hanyu Zhang, Kristen Vaccaro
-        <br>
-        <br>
-        <em>CHI 2026 </em>
-        <br>
-        <!-- <a href="https://dl.acm.org/doi/suppl/10.1145/3613905.3647969/suppl_file/3613905.3647969-talk-video.mp4">Competition Presentation</a>/ <a href="https://www.si.umich.edu/about-umsi/news/umsi-team-wins-chi-2024-student-design-competition#:~:text=Master%20of%20Science%20in%20Information,CHI%202024%20Student%20Design%20Competition.">Winner Posts</a> -->
-        <p></p>
-        <p class="abstract">
-          Recent work has shown that front-end code generated by large language models (LLMs) can embed deceptive designs. This study analyzes a large set of LLM-generated web components to identify deceptive designs and examines LLM design rationales through three prompts to understand their design decisions. We evaluate 15 commonly seen ecommerce components and generate a total of 1,080 components using four LLMs. We find that 55.8% of the generated components contain at least one deceptive design, with Interface Interference emerging as the dominant strategy, which uses color psychology to influence actions and hides essential information. The occurrence of deceptive designs varies across models, with DeepSeek producing the fewest. We find that prompts emphasizing company interests (e.g., increasing sales) significantly increase deceptive designs, whereas prompts incorporating human values effectively reduce them. Our findings highlight risks in using LLMs for coding and offer recommendations actions for LLM providers.
-        </p>
-      </td>
-    </tr>
+      </aside>
 
-    <tr>
-      <td style="padding:16px;width:20%;vertical-align:top">
-        <div class="one">
-          <img src='images/teaser_water.png' width=100%>
-        </div>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://dl.acm.org/doi/abs/10.1145/3613905.3647969">
-          <span class="papertitle">Where’s the Water? Supporting Clean Water Access for the Homeless Community</span>
-        </a>
-        <br>
-        Alexandra Balmaceda*, <strong>Ziwei Chen*</strong>  (* denotes equal contribution)
-        <br>
-        <br>
-        <em>CHI EA 2024 </em>| <span style="color: red;">2024 CHI Student Design Competition Winner </span>(top 2 out of 43 submissions)
-        <br>
-        <a href="https://dl.acm.org/doi/suppl/10.1145/3613905.3647969/suppl_file/3613905.3647969-talk-video.mp4">Competition Presentation</a>/ <a href="https://www.si.umich.edu/about-umsi/news/umsi-team-wins-chi-2024-student-design-competition#:~:text=Master%20of%20Science%20in%20Information,CHI%202024%20Student%20Design%20Competition.">Winner Posts</a>
-        <p></p>
-        <p class="abstract">
-          Access to clean water is essential, yet it poses a significant challenge for the homeless population. Our project, ’Where’s the Water,’ is a web-based tool designed to improve water access for the homeless community. It maps nearby clean water sources like drinking fountains, public restrooms, and showers. The tool’s design was informed through interviews with the homeless community in Ann Arbor, Michigan. The insights gained from these interviews were further supported by key findings from recent studies related to homelessness and water access. Besides locating, our tool’s functionality also includes filtering sources for operational hours and water quality. It features crowd-sourcing, allowing users to add new sources on the map, effectively utilizing community knowledge. In this article, we describe our research and design approach, highlighting the community and organizational feedback that helped turn our concept into a useful tool.
-        </p>
-      </td>
-    </tr>
+      <div class="site-main">
+        <table class="home-hero-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:0;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5% 2.5% 2.5% 0;width:60%;vertical-align:top">
+              <p class="name">
+                Ziwei Nina Chen
+              </p>
+              <p>My name is Ziwei Nina Chen. I am a first-year PhD student in Computer Science & Engineering at UC San Diego, advised by <a href="https://kvaccaro.com/" target="_blank">Prof. Kristen Vaccaro</a>. I am also a member of the <a href = "https://designlab.ucsd.edu/" target="_blank">Design Lab</a>. My current research focus is leveraging AI power to facilitate communication across roles (i.e. designers and engineers), and understanding potential harm caused by the use of LLMs (i.e. dark patterns). I am interested in researching, designing and building people-centered systems.
+              </p>
+              <p>
+                <a href="mailto:nic005@ucsd.edu">Email</a> &nbsp;/&nbsp;
+                <a href="data/Ziwei_Chen_s_Resume.pdf" target="_blank">CV</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=oEkbI_0AAAAJ&hl=en" target="_blank">Scholar</a> &nbsp;/&nbsp;
+                <a href="https://github.com/ChenzwNina" target="_blank">Github</a>
+              </p>
+            </td>
+            <td class="home-hero-photo-cell" style="width:36%;vertical-align:top">
+              <a href="images/Profile.png">
+                <div class="home-profile-photo-frame">
+                  <img class="home-profile-photo" alt="profile photo" src="images/Profile.png">
+                </div>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td class="home-news" colspan="2" style="padding:28px 0 0 0;vertical-align:top">
+              <h2>📰 News</h2>
+              <p><strong>Jan 2026</strong></p>
+              <p> 🎉🎉 Our paper &ldquo;Deception at Scale: Deceptive Designs in 1K LLM-Generated E-Commerce Components&rdquo; has been accepted to <em>CHI 2026</em>! I will present our work at the conference in Barcelona this April.</p>
+              <p><strong>Sept 2025</strong></p>
+              <p>I wrapped up my chapter at Dusty Robotics as a UX designer, and started my PhD program at UC San Diego. An exciting journey ahead!</p>
 
-    <br>
-    <br>
+              <p><a href="news.html">More news</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="home-research" colspan="2" style="vertical-align:top">
+              <h2>Publications</h2>
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:0;"><tbody>
+                <tr>
+                  <td style="padding:16px 16px 16px 0;width:20%;vertical-align:top">
+                    <div class="one">
+                      <img src="images/teaser_dark_pattern.png" style="width:100%;" alt="">
+                    </div>
+                  </td>
+                  <td style="padding:8px;width:80%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2502.13499">
+                      <span class="papertitle">Deception at Scale: Deceptive Designs in 1K LLM-Generated E-Commerce Components</span>
+                    </a>
+                    <br>
+                    <strong>Ziwei Chen</strong>, Jiawen Shen, Luna, Hanyu Zhang, Kristen Vaccaro
+                    <br>
+                    <br>
+                    <em>CHI 2026 </em>
+                    <br>
+                    <p></p>
+                    <p class="abstract">
+                      Recent work has shown that front-end code generated by Large Language Models (LLMs) can embed deceptive designs. To assess the magnitude of this problem, identify the factors that influence deceptive design production, and test strategies for reducing deceptive designs, we carried out two studies which generated and analyzed 1,296 LLM-generated web components, along with a design rationale for each. 
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:16px 16px 16px 0;width:20%;vertical-align:top">
+                    <div class="one">
+                      <img src="images/teaser_water.png" style="width:100%;" alt="">
+                    </div>
+                  </td>
+                  <td style="padding:8px;width:80%;vertical-align:middle">
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3613905.3647969">
+                      <span class="papertitle">Where&rsquo;s the Water? Supporting Clean Water Access for the Homeless Community</span>
+                    </a>
+                    <br>
+                    Alexandra Balmaceda*, <strong>Ziwei Chen*</strong>  (* denotes equal contribution)
+                    <br>
+                    <br>
+                    <em>CHI EA 2024 </em>| CHI Student Design Competition Winner (top 2 out of 43 submissions)
+                    <br>
+                    <a href="https://dl.acm.org/doi/suppl/10.1145/3613905.3647969/suppl_file/3613905.3647969-talk-video.mp4">Video Presentation</a>/ <a href="https://www.si.umich.edu/about-umsi/news/umsi-team-wins-chi-2024-student-design-competition#:~:text=Master%20of%20Science%20in%20Information,CHI%202024%20Student%20Design%20Competition.">Winner Posts</a>
+                    <p></p>
+                    <p class="abstract">
+                      Access to clean water is essential, yet it poses a significant challenge for the homeless population. Our project, "Where's the Water" is a web-based tool designed to improve water access for the homeless community. It maps nearby clean water sources like drinking fountains, public restrooms, and showers. The tool's design was informed through interviews with the homeless community in Ann Arbor, Michigan. 
+                    </p>
+                  </td>
+                </tr>
+              </tbody></table>
+            </td>
+          </tr>
+        </tbody></table>
 
-    <!-- <tr>
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <img src='images/teaser_dark.png' width=100%>
-        </div>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href = "https://arxiv.org/abs/2502.13499v1">
-          <span class="papertitle">Hidden Darkness in LLM-Generated Designs: Exploring Dark Patterns in Ecommerce Web Components Generated by LLMs</span>
-        </a>
-        <br>
-				<strong>Ziwei Chen</strong>, Jiawen Shen, Luna, <a href="https://kvaccaro.com/">Kristen Vaccaro</a>
-        <br>
-        <br>
-        <em>DIS</em>, 2025 (In Submission)
-        <p></p>
-        <div class="tbody">
-          <p>
-            Recent work has highlighted the risks of LLM-generated content for a wide range of harmful behaviors, including incorrect and harmful code. In this work, we extend this by studying whether LLM-generated web design contains dark patterns. This work evaluated designs of ecommerce web components generated by four popular LLMs: Claude, GPT, Gemini, and Llama. We tested 13 commonly used ecommerce components (e.g., search, product reviews) and used them as prompts to generate a total of 312 components across all models. Over one-third of generated components contain at least one dark pattern. The majority of dark pattern strategies involve hiding crucial information, limiting users' actions, and manipulating them into making decisions through a sense of urgency. Dark patterns are also more frequently produced in components that are related to company interests. These findings highlight the need for interventions to prevent dark patterns during front-end code generation with LLMs and emphasize the importance of expanding ethical design education to a broader audience.
-          </p>
-        </div>
-      </td>
-    </tr> -->
-            
-    </tbody></table>
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr>
-        <td style="padding:0px">
-          <br>
-          <p style="text-align:center;font-size:small;">
-            Template adopted from <a href="https://jonbarron.info/"> Jon Barron</a>
-          </p>
-        </td>
-      </tr>
-    </tbody></table>
-        </td>
-      </tr>
-    </table>
+      </div>
+    </div>
   </body>
 </html>
