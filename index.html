@@ -14,16 +14,14 @@
 
   <body>
     <div class="site-shell">
-      <aside class="sidebar">
-        <div class="sidebar-inner">
-          <nav aria-label="Site">
-            <a href="index.html" class="active">Home</a>
-            <a href="news.html">News</a>
-            <a href="about.html">About Me</a>
-            <a href="resume.html">Resume</a>
-          </nav>
-        </div>
-      </aside>
+      <header class="site-nav">
+        <nav aria-label="Site">
+          <a href="index.html" class="active">Home</a>
+          <a href="news.html">News</a>
+          <a href="about.html">About</a>
+          <a href="resume.html">Resume</a>
+        </nav>
+      </header>
 
       <div class="site-main">
         <table class="home-hero-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:0;"><tbody>
@@ -32,12 +30,12 @@
               <p class="name">
                 Ziwei Nina Chen
               </p>
-              <p>My name is Ziwei Nina Chen. I am a first-year PhD student in Computer Science & Engineering at UC San Diego, advised by <a href="https://kvaccaro.com/" target="_blank">Prof. Kristen Vaccaro</a>. I am also a member of the <a href = "https://designlab.ucsd.edu/" target="_blank">Design Lab</a>. I am are interested in people-centered AI systems that mediate communication, shape interactions, and influence human behavior. My current work spans three directions: (1) helping designers communicate UI transition animations more effectively with developers, (2) simulating realistic spoken conversations through LLM agents, and (3) identifying harmful patterns in LLM-generated front-end code, such as dark patterns.</p>
-              <p>
-                <a href="mailto:nic005@ucsd.edu">Email</a> &nbsp;/&nbsp;
-                <a href="data/Ziwei_Chen_s_Resume.pdf" target="_blank">CV</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=oEkbI_0AAAAJ&hl=en" target="_blank">Scholar</a> &nbsp;/&nbsp;
-                <a href="https://github.com/ChenzwNina" target="_blank">Github</a>
+              <p>My name is Ziwei Nina Chen. I am a second-year PhD student in Computer Science & Engineering at UC San Diego, advised by <a href="https://kvaccaro.com/" target="_blank">Prof. Kristen Vaccaro</a>. I am also a member of the <a href = "https://designlab.ucsd.edu/" target="_blank">Design Lab</a>. I study how AI systems behave in human-centered contexts and how we can evaluate and design them to better support people. I am interested in developing evaluation methods and interactive systems that help us understand AI behavior and improve its alignment with human needs and social contexts.</p>
+              <p class="contact-links">
+                <a class="paper-btn" href="mailto:nic005@ucsd.edu">Email</a>
+                <a class="paper-btn" href="data/Ziwei_Chen_s_Resume.pdf" target="_blank" rel="noopener">CV</a>
+                <a class="paper-btn" href="https://scholar.google.com/citations?user=oEkbI_0AAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+                <a class="paper-btn" href="https://github.com/ChenzwNina" target="_blank" rel="noopener">Github</a>
               </p>
             </td>
             <td class="home-hero-photo-cell" style="width:36%;vertical-align:top">
@@ -50,62 +48,57 @@
           </tr>
           <tr>
             <td class="home-news" colspan="2" style="padding:28px 0 0 0;vertical-align:top">
-              <h2>📰 News</h2>
-              <p><strong>Jan 2026</strong></p>
-              <p> 🎉🎉 Our paper &ldquo;Deception at Scale: Deceptive Designs in 1K LLM-Generated E-Commerce Components&rdquo; has been accepted to <em>CHI 2026</em>! I will present our work at the conference in Barcelona this April.</p>
-              <p><strong>Sept 2025</strong></p>
-              <p>I wrapped up my chapter at Dusty Robotics as a UX designer, and started my PhD program at UC San Diego. An exciting journey ahead!</p>
+              <h2>News</h2>
+              <p><strong>Sept 2026</strong></p>
+              <p>I recently completed my fellowship at <a href="https://www.eigenlabs.org/">Eigen Labs</a>, where I developed a benchmark for evaluating how speech-to-speech models understand non-speech vocalizations (e.g. laughs, sighs). It is a step toward more socially aware voice agents!</p>
 
-              <p><a href="news.html">More news</a></p>
+              <p class="contact-links"><a class="paper-btn" href="news.html">More news</a></p>
             </td>
           </tr>
           <tr>
             <td class="home-research" colspan="2" style="vertical-align:top">
-              <h2>Publications</h2>
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:0;"><tbody>
-                <tr>
-                  <td style="padding:16px 16px 16px 0;width:20%;vertical-align:top">
+              <h2>Publications & Reports</h2>
+              <table class="paper-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:0;"><tbody>
+                <tr class="paper-row">
+                  <td class="paper-teaser-cell">
                     <div class="one">
                       <img src="images/teaser_dark_pattern.png" style="width:100%;" alt="">
                     </div>
                   </td>
-                  <td style="padding:8px;width:80%;vertical-align:middle">
-                    <a href="https://arxiv.org/abs/2502.13499">
-                      <span class="papertitle">Deception at Scale: Deceptive Designs in 1K LLM-Generated E-Commerce Components</span>
-                    </a>
-                    <br>
-                    <strong>Ziwei Chen</strong>, Jiawen Shen, Luna, Hanyu Zhang, Kristen Vaccaro
-                    <br>
-                    <br>
-                    <em>CHI 2026 </em>
-                    <br>
-                    <p></p>
-                    <p class="abstract">
-                      Recent work has shown that front-end code generated by Large Language Models (LLMs) can embed deceptive designs. To assess the magnitude of this problem, identify the factors that influence deceptive design production, and test strategies for reducing deceptive designs, we carried out two studies which generated and analyzed 1,296 LLM-generated web components, along with a design rationale for each. 
-                    </p>
+                  <td class="paper-meta-cell">
+                    <div class="paper-entry">
+                      <p class="paper-title-row">
+                        <span class="papertitle">Deception at Scale: Deceptive Designs in 1K LLM-Generated E-Commerce Components</span>
+                        <a class="paper-pdf-btn" href="https://arxiv.org/pdf/2502.13499" target="_blank" rel="noopener">PDF</a>
+                      </p>
+                      <p class="paper-authors"><strong>Ziwei Chen</strong>, Jiawen Shen, Luna, Hanyu Zhang, Kristen Vaccaro</p>
+                      <p class="paper-venue">CHI 2026</p>
+                      <p class="abstract">
+                        Recent work has shown that front-end code generated by Large Language Models (LLMs) can embed deceptive designs. To assess the magnitude of this problem, identify the factors that influence deceptive design production, and test strategies for reducing deceptive designs, we carried out two studies which generated and analyzed 1,296 LLM-generated web components, along with a design rationale for each.
+                      </p>
+                    </div>
                   </td>
                 </tr>
-                <tr>
-                  <td style="padding:16px 16px 16px 0;width:20%;vertical-align:top">
+                <tr class="paper-row">
+                  <td class="paper-teaser-cell">
                     <div class="one">
                       <img src="images/teaser_water.png" style="width:100%;" alt="">
                     </div>
                   </td>
-                  <td style="padding:8px;width:80%;vertical-align:middle">
-                    <a href="https://dl.acm.org/doi/abs/10.1145/3613905.3647969">
-                      <span class="papertitle">Where&rsquo;s the Water? Supporting Clean Water Access for the Homeless Community</span>
-                    </a>
-                    <br>
-                    Alexandra Balmaceda*, <strong>Ziwei Chen*</strong>  (* denotes equal contribution)
-                    <br>
-                    <br>
-                    <em>CHI EA 2024 </em>| CHI Student Design Competition Winner (top 2 out of 43 submissions)
-                    <br>
-                    <a href="https://dl.acm.org/doi/suppl/10.1145/3613905.3647969/suppl_file/3613905.3647969-talk-video.mp4">Video Presentation</a>/ <a href="https://www.si.umich.edu/about-umsi/news/umsi-team-wins-chi-2024-student-design-competition#:~:text=Master%20of%20Science%20in%20Information,CHI%202024%20Student%20Design%20Competition.">Winner Posts</a>
-                    <p></p>
-                    <p class="abstract">
-                      Access to clean water is essential, yet it poses a significant challenge for the homeless population. Our project, "Where's the Water" is a web-based tool designed to improve water access for the homeless community. It maps nearby clean water sources like drinking fountains, public restrooms, and showers. The tool's design was informed through interviews with the homeless community in Ann Arbor, Michigan. 
-                    </p>
+                  <td class="paper-meta-cell">
+                    <div class="paper-entry">
+                      <p class="paper-title-row">
+                        <span class="papertitle">Where&rsquo;s the Water? Supporting Clean Water Access for the Homeless Community</span>
+                        <a class="paper-pdf-btn" href="https://dl.acm.org/doi/pdf/10.1145/3613905.3647969" target="_blank" rel="noopener">PDF</a>
+                        <a class="paper-btn" href="https://dl.acm.org/doi/suppl/10.1145/3613905.3647969/suppl_file/3613905.3647969-talk-video.mp4" target="_blank" rel="noopener">Video Presentation</a>
+                        <a class="paper-btn" href="https://www.si.umich.edu/about-umsi/news/umsi-team-wins-chi-2024-student-design-competition#:~:text=Master%20of%20Science%20in%20Information,CHI%202024%20Student%20Design%20Competition." target="_blank" rel="noopener">Winner Posts</a>
+                      </p>
+                      <p class="paper-authors">Alexandra Balmaceda*, <strong>Ziwei Chen*</strong> (* denotes equal contribution)</p>
+                      <p class="paper-venue">CHI EA 2024 | CHI Student Design Competition Winner (top 2 out of 43 submissions)</p>
+                      <p class="abstract">
+                        Access to clean water is essential, yet it poses a significant challenge for the homeless population. Our project, "Where's the Water" is a web-based tool designed to improve water access for the homeless community. It maps nearby clean water sources like drinking fountains, public restrooms, and showers. The tool's design was informed through interviews with the homeless community in Ann Arbor, Michigan.
+                      </p>
+                    </div>
                   </td>
                 </tr>
               </tbody></table>
